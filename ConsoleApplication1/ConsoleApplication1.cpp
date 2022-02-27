@@ -1,9 +1,9 @@
-//A. Beautiful Year
+//Beautiful Year
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main() {
-	int year,num1,num2,num3,num4;
+	int year, num1, num2, num3, num4;
 	cin >> year;
 	while (true)
 	{
@@ -13,8 +13,8 @@ int main() {
 		num3 = year / 10 % 10;
 		num4 = year % 10;
 
-		if (num1!=num2 && num1!=num3 && num1!=num4 
-			&& num2!=num3 && num2!=num4 && num3!=num4)
+		if (num1 != num2 && num1 != num3 && num1 != num4
+			&& num2 != num3 && num2 != num4 && num3 != num4)
 		{
 			break;
 		}
@@ -22,4 +22,20 @@ int main() {
 
 	cout << year;
 	return 0;
+}*/
+
+//Vanya and Fence
+#include<iostream>
+using namespace std;
+int main() {
+	int a,b,c,sum=0;
+	cin >> a>>b;
+	for (int i = 0;i < a;i++) {
+		cin >> c;
+		if (c > b) {
+			sum++;
+		}
+		sum++;
+	}
+	cout << sum;
 }
