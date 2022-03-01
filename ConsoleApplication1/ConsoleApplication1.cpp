@@ -25,7 +25,8 @@ int main() {
 }*/
 
 //Vanya and Fence
-#include<iostream>
+
+/*#include<iostream>
 using namespace std;
 int main() {
 	int a,b,c,sum=0;
@@ -38,4 +39,21 @@ int main() {
 		sum++;
 	}
 	cout << sum;
+}*/
+
+//Georgeand Accommodation
+
+
+#include<iostream>
+using namespace std;
+int main() {
+	int a, people, capacity, res=0;
+	cin >> a;
+	while (a--) {
+		cin >> people >> capacity;
+		if(capacity - people >= 2) {
+			res++;
+		}
+	}
+	cout << res;
 }
