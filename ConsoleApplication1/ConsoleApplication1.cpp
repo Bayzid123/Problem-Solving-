@@ -44,7 +44,7 @@ int main() {
 //Georgeand Accommodation
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main() {
 	int a, people, capacity, res=0;
@@ -56,4 +56,20 @@ int main() {
 		}
 	}
 	cout << res;
+}*/
+
+//presents
+
+#include<iostream>
+using namespace std;
+int main() {
+	int a, b, num[100];
+	cin >> a;
+	for (int i = 1; i <= a;i++) {
+		cin >> b;
+		num[b] = i;
+	}
+	for (int i = 1; i <= a; i++) {
+		cout << num[i] << " ";
+	}
 }
