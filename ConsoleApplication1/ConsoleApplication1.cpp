@@ -76,7 +76,7 @@ int main() {
 
 //Magnets
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main() 
 {
@@ -93,6 +93,28 @@ int main()
 		}
 	}
 	cout << c;
-}
+}*/
 
+
+// In Search of an Easy Problem
+
+#include<iostream>
+using namespace std;
+int main() {
+	int a, c=0;
+	cin >> a;
+	int b[100];
+	for (int i = 0; i < a; i++) {
+		cin >> b[i];
+		if (b[i] == 1) {
+			c++;
+		}
+	}
+	if (c == 0) {
+		cout << "Easy";
+	}
+	else {
+		cout << "Hard";
+	}
+}
 
