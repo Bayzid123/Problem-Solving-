@@ -98,7 +98,7 @@ int main()
 
 // In Search of an Easy Problem
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main() {
 	int a, c=0;
@@ -116,5 +116,23 @@ int main() {
 	else {
 		cout << "Hard";
 	}
-}
+}*/
+
+// Even Odds
+
+/*#include <iostream>
+using namespace std;
+int main()
+{
+	long long a, b;
+	cin >> a >> b;
+	
+	if (b <= (a+1)/2) {
+		cout<< b * 2 - 1;
+	}
+	else {
+		cout << (b - (a+1)/2)*2;
+	}
+	
+}*/
 
