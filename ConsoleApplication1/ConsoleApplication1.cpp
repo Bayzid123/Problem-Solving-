@@ -155,7 +155,7 @@ int main()
 
 // Ultra-Fast Mathematician
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main() {
 	string s1, s2;
@@ -169,4 +169,21 @@ int main() {
 		}
 	}
 	cout << s1;
+}*/
+
+// Drinks
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a, b[100];
+	double res=0.0, sum = 0.0;
+	cin >> a;
+	for (int i = 0;i < a;i++) {
+		cin >> b[i];
+		sum += b[i];
+	}
+	res = sum / a;
+	cout <<fixed<< setprecision(12)<<res;
 }
