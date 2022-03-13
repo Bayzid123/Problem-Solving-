@@ -214,7 +214,7 @@ int main()
 
 // Is your horseshoe on the other hoof?
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int arr[4], count = 0;
@@ -231,4 +231,4 @@ int main() {
 		}
 	}
 	cout << count;
-}
+}*/
