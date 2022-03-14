@@ -78,14 +78,14 @@ int main() {
 
 /*#include<iostream>
 using namespace std;
-int main() 
+int main()
 {
 	int a, c=0;
 	cin >> a;
 	int arr[100000];
-	for (int i = 0; i < a; i++) 
+	for (int i = 0; i < a; i++)
 	{
-		cin >> arr[i];	
+		cin >> arr[i];
 	}
 	for (int i = 0;i < a;i++) {
 		if (arr[i] != arr[i + 1]) {
@@ -126,14 +126,14 @@ int main()
 {
 	long long a, b;
 	cin >> a >> b;
-	
+
 	if (b <= (a+1)/2) {
 		cout<< b * 2 - 1;
 	}
 	else {
 		cout << (b - (a+1)/2)*2;
 	}
-	
+
 }*/
 
 // Calculating Function
@@ -234,14 +234,75 @@ int main() {
 }*/
 
 // addition upto n--1+2+....+n
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int n, sum = 0;
 	cin >> n;
 	for (int i = 0; i <= n;i++) {
-		
+
 		sum += i;
 	}
 	cout << sum;
+}*/
+
+//
+/*#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int i, j;
+	for (int i = 0; i <= 10;i++) {
+		for(int j=0; j<=10;j++){
+			cout << i * j;
+		}
+	}
+
+}*/
+
+// Taxi wrong
+
+/*#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int n, sum = 0,res=0;
+	int arr[100];
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+		sum += arr[i];
+	}
+	if (sum % 4 == 0) {
+		cout << sum/4;
+	}
+	else {
+		cout << (sum/4) + 1;
+	}
+}*/
+// Taxi Right
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+	int n, s, count[5] = { 0 };
+	cin >> n;
+	while (n--)
+	{
+		cin >> s;
+		count[s] += 1;
+	}
+	int total = count[4] + count[3] + count[2] / 2;
+	count[1] -= count[3];
+	if (count[2] % 2 == 1)
+	{
+		total += 1;
+		count[1] -= 2;
+	}
+	if (count[1] > 0)
+	{
+		total += (count[1] + 3) / 4;
+	}
+	cout << total;
+	return 0;
 }
