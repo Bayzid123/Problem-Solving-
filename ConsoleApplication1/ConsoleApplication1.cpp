@@ -348,7 +348,7 @@ int main() {
 }*/
 
 //Gravity Flip
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int a,arr[100];
@@ -359,5 +359,33 @@ int main() {
 	sort(arr, arr + a);
 	for (int i = 0; i < a; i++) {
 		cout << arr[i] << " ";
+	}
+}*/
+
+// I Wanna Be the Guy
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int f, p, q, arr[200], count = 0;
+	cin >> f >> p;
+	for (int i = 0; i < p; i++) {
+		cin >> arr[i];
+	}
+	cin >> q;
+	for (int i = p; i < p + q; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + (p + q));
+	for (int i = 0; i < p + q; i++) {
+		if (arr[i] != arr[i+1]) {
+			count++;
+		}
+	}
+	if (count == f) {
+		cout << "I become the guy.";
+	}
+	else {
+		cout << "Oh, my keyboard!";
 	}
 }
