@@ -331,7 +331,7 @@ int main() {
 
 // Expression
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	long long a, b, c, res;
@@ -344,5 +344,20 @@ int main() {
 		res = max(res, (b + c) * a);
 		res = max(res, (b * c) + a);
 		cout << res;
+	}
+}*/
+
+//Gravity Flip
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int a,arr[100];
+	cin >> a;
+	for (int i = 0;i < a; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + a);
+	for (int i = 0; i < a; i++) {
+		cout << arr[i] << " ";
 	}
 }
