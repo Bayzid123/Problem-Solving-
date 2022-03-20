@@ -309,7 +309,7 @@ int main()
 
 // Kefa and First Steps
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int n, c=0, m=1;
@@ -327,4 +327,22 @@ int main() {
 		}		
 	}
 	cout << m;
+}*/
+
+// Expression
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	long long a, b, c, res;
+	while (cin >> a >> b >> c)
+	{
+		res = a + b + c;
+		res = max(res, (a + b) * c);
+		res = max(res, (a * b * c));
+		res = max(res, (a * b) + c);
+		res = max(res, (b + c) * a);
+		res = max(res, (b * c) + a);
+		cout << res;
+	}
 }
