@@ -364,7 +364,7 @@ int main() {
 
 // I Wanna Be the Guy
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int f, p, q, arr[200], count = 0;
@@ -387,5 +387,42 @@ int main() {
 	}
 	else {
 		cout << "Oh, my keyboard!";
+	}
+}*/
+
+// cAPS lOCK
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	string s;
+	int c1 = 0,c2 = 0;
+	cin >> s;
+	for (int i = 1;i < s.size();i++) {
+		if (islower(s[i])) {
+			c1++;
+		}
+	}
+	for (int i = 0;i < s.size();i++) {
+		if (isupper(s[i])) {
+			c2++;
+		}
+	}
+	if (islower(s[0]) && c1 == 0) {
+		s[0] = toupper(s[0]);
+		for (int i = 1; i < s.size(); i++) {
+			s[i] = tolower(s[i]);
+		}
+		cout << s;
+		return 0;
+	}
+	if (c2==s.size()) {
+		for (int i = 0; i < s.size(); i++) {
+			s[i] = tolower(s[i]);
+		}
+		cout << s;
+	}
+	else {
+		cout << s;
 	}
 }
