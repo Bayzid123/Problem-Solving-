@@ -444,7 +444,7 @@ int main() {
 
 // Dubstep
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	string s;
@@ -458,4 +458,27 @@ int main() {
 			cout << s[i];
 		}
 	}
+}*/
+
+// Arrival of the General
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int n, arr[100],ma=0,mi=101,max,min;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+		if (arr[i] > ma) {
+			ma = arr[i];
+			max = i;
+		}
+		if(arr[i] <= mi) {
+			mi = arr[i];
+			min = i;
+		}
+	}
+	if (max > min) {
+		min++;
+	}
+	cout << max + (n - 1) - min;
 }
