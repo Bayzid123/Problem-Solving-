@@ -461,7 +461,7 @@ int main() {
 }*/
 
 // Arrival of the General
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int n, arr[100],ma=0,mi=101,max,min;
@@ -481,4 +481,34 @@ int main() {
 		min++;
 	}
 	cout << max + (n - 1) - min;
+}*/
+
+// Divisibility Problem
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+	int t;
+	cin >> t;
+
+	while (t--) {
+
+		int x, y;
+		cin >> x >> y;
+
+		if (x % y == 0)
+		{
+			cout << 0 << endl;
+		}
+		else {
+
+			int w = x % y;
+
+			cout << y - w << endl;
+
+		}
+	}
+	return 0;
 }
