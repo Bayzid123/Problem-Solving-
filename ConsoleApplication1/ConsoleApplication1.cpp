@@ -485,7 +485,7 @@ int main() {
 
 // Divisibility Problem
 
-#include <bits/stdc++.h>
+/*#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -511,4 +511,25 @@ int main() {
 		}
 	}
 	return 0;
+}*/
+
+// Puzzles
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int st, np, m = 0, res;
+	cin >> st >> np;
+	int arr[1000];
+	for (int i = 0; i < np; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + np);
+	m = arr[np - 1] - arr[0];
+	for (int i = st;i <= np;i++) {
+		res = arr[i - 1] - arr[i - st];
+		res = abs(res);
+		m = min(m, res);
+	}
+	cout << m;
 }
