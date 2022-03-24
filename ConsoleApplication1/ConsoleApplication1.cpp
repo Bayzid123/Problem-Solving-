@@ -536,7 +536,7 @@ int main() {
 
 // Anton and Letters
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	string s;
@@ -554,4 +554,49 @@ int main() {
 		}
 	}
 	cout << c-1;
+}*/
+
+// IQ test
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a, j = 0, b = 0;
+	cin >> a;
+	int arr[100];
+	for (int i = 0; i < a; i++)
+	{
+		cin >> arr[i];
+		if (arr[i] % 2 == 0)
+		{
+			j++;
+		}
+		else
+		{
+			b++;
+		}
+	}
+	if (j > b)
+	{
+		for (int i = 0; i < a; i++)
+		{
+			if (arr[i] % 2 != 0)
+			{
+				cout << i + 1;
+				break;
+			}
+		}
+	}
+	else
+	{
+		for (int i = 0; i < a; i++)
+		{
+			if (arr[i] % 2 == 0)
+			{
+				cout << i + 1;
+				break;
+			}
+		}
+	}
 }
