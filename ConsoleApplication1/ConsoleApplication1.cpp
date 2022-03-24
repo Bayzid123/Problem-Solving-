@@ -515,7 +515,7 @@ int main() {
 
 // Puzzles
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int st, np, m = 0, res;
@@ -532,4 +532,26 @@ int main() {
 		m = min(m, res);
 	}
 	cout << m;
+}*/
+
+// Anton and Letters
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	string s;
+	int c = 0;
+	getline(cin, s);
+	sort(s.begin(), s.end());
+	for (int i = 0; i < s.size()-1;i++) {
+		if (s[i]=='{}' || s[i]==',' || s[i]==' ') {
+			continue;
+		}
+		else{
+			if (s[i] != s[i + 1]) {
+				c++;
+			}
+		}
+	}
+	cout << c-1;
 }
