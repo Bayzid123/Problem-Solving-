@@ -558,7 +558,7 @@ int main() {
 
 // IQ test
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -599,4 +599,24 @@ int main()
 			}
 		}
 	}
+}*/
+
+// Games
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int a,x[1000],y[1000], c = 0;
+	cin >> a;
+	for (int i=0; i < a; i++) {
+		cin >> x[i]>>y[i];
+	}
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < a; j++) {
+			if (x[i] == y[j]) {
+				c++;
+			}
+		}
+	}
+	cout << c;
 }
