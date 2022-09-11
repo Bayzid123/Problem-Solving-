@@ -649,6 +649,32 @@ int main() {
 		cout << "NO";
 }*/
 
+// Given an array of numbers. Calculate the absolute difference between sum of odd elements and even elements
 
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int n, odd_sum = 0, even_sum = 0;
+	cin >> n;
+	int arr[1000];
 
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		if (arr[i] % 2 == 0)
+		{
+			even_sum = even_sum + arr[i];
+		}
+		else if (arr[i] % 2 != 0)
+		{
+			odd_sum = odd_sum + arr[i];
+		}
+	}
+	int abs_diff = (even_sum > odd_sum) ? (even_sum - odd_sum) : (odd_sum - even_sum);
+	cout << abs_diff;
+}
 
