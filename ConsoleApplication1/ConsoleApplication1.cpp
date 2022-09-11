@@ -324,7 +324,7 @@ int main() {
 		}
 		else {
 			c = 1;
-		}		
+		}
 	}
 	cout << m;
 }*/
@@ -620,3 +620,31 @@ int main() {
 	}
 	cout << c;
 }*/
+
+// Pangram
+
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int a, count = 0;
+	string s;
+	cin >> a;
+	cin >> s;
+	for (int i = 0; i < a; i++) {
+		s[i] = tolower(s[i]);
+	}
+	sort(s.begin(), s.end());
+	for (int j = 0; j < a; j++)
+	{
+		if (s[j] != s[j + 1])
+		{
+			count++;
+		}
+	}
+	if (count == 26)
+	{
+		cout << "YES";
+	}
+	else
+		cout << "NO";
+}
