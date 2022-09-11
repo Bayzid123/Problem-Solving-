@@ -603,7 +603,7 @@ int main()
 
 // Games
 
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int a,x[1000],y[1000], c = 0;
@@ -619,4 +619,4 @@ int main() {
 		}
 	}
 	cout << c;
-}
+}*/
