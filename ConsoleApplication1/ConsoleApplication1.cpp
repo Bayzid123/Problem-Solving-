@@ -651,30 +651,75 @@ int main() {
 
 // Given an array of numbers. Calculate the absolute difference between sum of odd elements and even elements
 
-#include<bits/stdc++.h>
-using namespace std;
-int main() {
-	int n, odd_sum = 0, even_sum = 0;
-	cin >> n;
-	int arr[1000];
+//#include<bits/stdc++.h>
+//using namespace std;
+//int main() {
+//	int n, odd_sum = 0, even_sum = 0;
+//	cin >> n;
+//	int arr[1000];
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (arr[i] % 2 == 0)
+//		{
+//			even_sum = even_sum + arr[i];
+//		}
+//		else if (arr[i] % 2 != 0)
+//		{
+//			odd_sum = odd_sum + arr[i];
+//		}
+//	}
+//	int abs_diff = (even_sum > odd_sum) ? (even_sum - odd_sum) : (odd_sum - even_sum);
+//	cout << abs_diff;
+//}
 
-	for (int i = 0; i < n; i++)
-	{
-		cin >> arr[i];
-	}
+// fibonacci -- for loop
 
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] % 2 == 0)
-		{
-			even_sum = even_sum + arr[i];
-		}
-		else if (arr[i] % 2 != 0)
-		{
-			odd_sum = odd_sum + arr[i];
-		}
-	}
-	int abs_diff = (even_sum > odd_sum) ? (even_sum - odd_sum) : (odd_sum - even_sum);
-	cout << abs_diff;
-}
+//#include<iostream> 
+//using namespace std;
+//int main()
+//{
+//	int first = 0, second = 1;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << second << " ";
+//		int third = second + first;
+//		first = second;
+//		second = third;
+//	}
+//	return 0;
+//}
+
+// fibonacci-- recursion
+
+//#include<iostream> 
+//using namespace std;
+//int fibb(int);
+//int main()
+//{
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << fibb(i) << " ";
+//	}
+//}
+//int fibb(int i)
+//{
+//	if (i == 0)
+//	{
+//		return 0;
+//	}
+//	if (i == 1)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return(fibb(i - 1) + fibb(i - 2));
+//	}
+//}
 
