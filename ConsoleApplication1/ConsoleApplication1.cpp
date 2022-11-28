@@ -1,4 +1,4 @@
-//Beautiful Year
+﻿//Beautiful Year
 
 /*#include<iostream>
 using namespace std;
@@ -680,7 +680,7 @@ int main() {
 
 // fibonacci -- for loop
 
-//#include<iostream> 
+//#include<bits/stdc++.h> 
 //using namespace std;
 //int main()
 //{
@@ -697,7 +697,7 @@ int main() {
 
 // fibonacci-- recursion
 
-//#include<iostream> 
+//#include<bits/stdc++.h> 
 //using namespace std;
 //int fibb(int);
 //int main()
@@ -722,4 +722,26 @@ int main() {
 //		return(fibb(i - 1) + fibb(i - 2));
 //	}
 //}
+
+// factorial
+
+#include<bits/stdc++.h>
+using namespace std;
+int fact(int n) 
+{
+	if (n == 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return n * fact(n - 1);
+	}
+}
+int main()
+{
+	int factorial = fact(5);
+	cout << factorial;
+}
+
 
