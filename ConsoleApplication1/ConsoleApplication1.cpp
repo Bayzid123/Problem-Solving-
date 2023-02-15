@@ -725,23 +725,89 @@ int main() {
 
 // factorial
 
+//#include<bits/stdc++.h>
+//using namespace std;
+//int fact(int n) 
+//{
+//	if (n == 1)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return n * fact(n - 1);
+//	}
+//}
+//int main()
+//{
+//	int factorial = fact(5);
+//	cout << factorial;
+//}
+
+//#include<bits/stdc++.h>
+//using namespace std;
+//
+//void print(vector<int> vect) {
+//	cout << "Total Elements: " << vect.size() << "\n";
+//	for (int datam : vect)
+//		cout << datam << " ";
+//	cout << "\n\n";
+//}
+//int main()
+//{
+//	vector<int> vect(5);
+//	print(vect);
+//
+//	return 0;
+//}
+
+ //fibonacci sequence using one loop -- Write the fibonacci sequence using only one loop?
+//#include<bits/stdc++.h>
+//using namespace std;
+//int main() {
+//	int input, first = 0, second = 1;
+//	cin >> input;
+//	for (int i = 0; i < input; i++)
+//	{
+//		cout << second << " ";
+//		int third = second + first;
+//		first = second;
+//		second = third;
+//	}
+//}
+
+// Find out whether the string is an anagram or not --
+
+
+
+// Linked List Example
 #include<bits/stdc++.h>
 using namespace std;
-int fact(int n) 
-{
-	if (n == 1)
-	{
-		return 1;
-	}
-	else
-	{
-		return n * fact(n - 1);
-	}
-}
-int main()
-{
-	int factorial = fact(5);
-	cout << factorial;
-}
+struct Node {
+	int data;
+	Node* next;
+};
 
+int main() {
+	Node* head = new Node();
+	Node* second = new Node();
+	Node* third = new Node();
 
+	head->data = 2;
+	head->next = second;
+
+	second->data = 5;
+	second->next = third;
+
+	third->data = 3;
+	third->next = NULL;
+
+	Node* current = head;
+	while (current != NULL)
+	{
+		cout << current->data << endl;
+		current = current->next;
+	}
+
+	return 0;
+}
